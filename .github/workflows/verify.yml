@@ -1,0 +1,36 @@
+name: Verify plugin
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate catalog
+        run: |
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          root = Path.cwd()
+          catalog = json.loads((root / '.agents/plugins/marketplace.json').read_text())
+          assert catalog['name'] == 'gmail-asistent'
+          assert len(catalog['plugins']) == 1
+          entry = catalog['plugins'][0]
+          plugin = root / entry['source']['path']
+          manifest = json.loads((plugin / '.codex-plugin/plugin.json').read_text())
+          assert manifest['name'] == entry['name']
+          assert (plugin / 'skills/inbox/SKILL.md').is_file()
+          PYCODE
+      - name: Offline regression tests
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          for test in plugins/inbox-manager/tests/test_*.py; do
+            python "$test"
+          done

@@ -1,0 +1,20 @@
+{
+  "name": "gmail-asistent",
+  "interface": {
+    "displayName": "Gmail asistent"
+  },
+  "plugins": [
+    {
+      "name": "inbox-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/inbox-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
