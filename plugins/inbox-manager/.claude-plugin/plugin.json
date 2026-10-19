@@ -1,0 +1,10 @@
+{
+  "name": "inbox-manager",
+  "displayName": "Správce e-mailů (Inbox Manager)",
+  "description": "Správa Gmailu přes Google Workspace CLI: prověření souvislostí, návrhy odpovědí, přehled rozhodnutí a schvalovaný úklid. Adaptace Inbox Manageru 0.11.4 od Authority Hacker s opravami AI Kruhu.",
+  "version": "1.1.0",
+  "author": {
+    "name": "AI Kruh",
+    "email": "info@vojtechbruk.cz"
+  }
+}
