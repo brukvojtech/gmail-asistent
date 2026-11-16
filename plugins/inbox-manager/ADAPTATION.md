@@ -1,6 +1,6 @@
 # Původ a změny
 
-Základ: **Inbox Manager 0.11.4, Authority Hacker**. Původní README a changelog
+Základ: **Inbox Manager 0.11.4**. Původní README a changelog
 jsou zachované v [UPSTREAM-README.md](UPSTREAM-README.md) a [CHANGELOG.md](CHANGELOG.md).
 Verze **1.0.0** označuje balíček AI Kruhu, nikoli nové vydání původního autora.
 
@@ -26,8 +26,7 @@ Nejsou přibalené osobní profily, přístupy, skutečné zprávy, přílohy, d
 logy, provozní evidence ani registr běžících automatizací. Nastavení nového
 uživatele vzniká samostatným schváleným setupem.
 
-Připraveno pro soukromý marketplace AI Kruhu. Původní autor zůstává uvedený;
-balíček netvrdí, že původní implementaci vytvořil AI Kruh, a nepřiděluje jí novou licenci.
+Balíček obsahuje úpravy pro AI Kruh. Nepřiděluje převzatému kódu novou licenci.
 
 ## AI Kruh 1.1.0
 

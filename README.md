@@ -1,6 +1,6 @@
 # Gmail asistent pro Codex
 
-Veřejný marketplace s jedním pluginem Inbox Manager 1.1.0. Pro stažení není potřeba GitHub účet ani členství v AI Kruhu. Základ Authority Hacker 0.11.4, adaptace a opravy AI Kruhu; původní dokumentace a historie jsou zachované uvnitř pluginu.
+Veřejný marketplace s jedním pluginem Inbox Manager 1.1.0. Pro stažení není potřeba GitHub účet ani členství v AI Kruhu.
 
 ## Instalace do Codexu
 
