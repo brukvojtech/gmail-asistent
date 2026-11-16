@@ -1,6 +1,6 @@
 # Správce e-mailů pro AI Kruh
 
-Naše adaptace **Authority Hacker Inbox Manageru 0.11.4**. Zachovává všech devět skillů a celý lokální runtime. Přidává naše dvě provozní opravy, opravu retence a postup pro Gmail přes Google Workspace CLI (`gws`). [Původní dokumentace](UPSTREAM-README.md) zůstává zachovaná.
+**Inbox Manager pro správu Gmailu.** Zachovává všech devět skillů a celý lokální runtime. Přidává naše dvě provozní opravy, opravu retence a postup pro Gmail přes Google Workspace CLI (`gws`). [Původní dokumentace](UPSTREAM-README.md) zůstává zachovaná.
 
 ## Co dělá
 
@@ -19,7 +19,7 @@ V Claude Code po vydání do marketplace:
 /inbox
 ```
 
-V Codexu vyber **Správce e-mailů (Inbox Manager)** z marketplace AI Kruhu a napiš: „Nastav správu mého Gmailu. Zatím pouze koncepty, nic neodesílej.“ Pokud je zároveň zapnutá původní verze Authority Hacker, vypni jednu z obou verzí, aby se nemíchaly stejně pojmenované skilly. Instalace sama nepřenáší profil, nepřepojuje existující plán a nic nemění v Gmailu.
+V Codexu vyber **Správce e-mailů (Inbox Manager)** z marketplace AI Kruhu a napiš: „Nastav správu mého Gmailu. Zatím pouze koncepty, nic neodesílej.“ Pokud máš současně nainstalovanou jinou kopii Inbox Manageru, ponech aktivní jen jednu, aby se nemíchaly stejně pojmenované skilly. Instalace sama nepřenáší profil, nepřepojuje existující plán a nic nemění v Gmailu.
 
 Potřebuješ Python 3.10 nebo novější a funkční `gws` přihlášené ke správnému účtu. Setup ověří konkrétní schopnosti a oprávnění. Instalaci CLI a přihlášení řeš podle oficiální dokumentace nástroje.
 
